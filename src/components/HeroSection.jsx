@@ -2,7 +2,7 @@ import React from 'react'
 import SplitText from './SplitText';
 import TextType from './TextType';
 
-const profileImg = ''; 
+const profileImg = '/profile.jpg'; 
 
 const HeroSection = () => {
   const handleAnimationComplete = () => {
