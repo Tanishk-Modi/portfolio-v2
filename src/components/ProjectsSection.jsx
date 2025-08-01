@@ -1,8 +1,8 @@
 import React from 'react'
 import { Github, ExternalLink } from 'lucide-react';
 
-const profitGridImg = '../public/profitgridimg.png';
-const rayCastingImg = '../public/mammothmaze.png';
+const profitGridImg = '/profitgridimg.png';
+const rayCastingImg = '/mammothmaze.png';
 
 const projects = [
     {
