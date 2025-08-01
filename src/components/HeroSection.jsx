@@ -76,11 +76,13 @@ const HeroSection = () => {
 
         {/* Right Column */}
         <div className="flex items-center justify-center mt-10 md:mt-0">
-          <img
-            src={profileImg}
-            alt="Profile"
-            className="w-64 h-64 rounded-full border-4 border-white object-cover shadow-lg"
-          />
+          <div className="w-64 h-64 lg:w-72 lg:h-72 rounded-full border-4 border-white object-cover shadow-lg overflow-hidden">
+            <img
+              src={profileImg}
+              alt="Profile"
+              className="w-full h-full object-cover image-render-fix"
+            />
+          </div>
         </div>
       </div>
     </section>
