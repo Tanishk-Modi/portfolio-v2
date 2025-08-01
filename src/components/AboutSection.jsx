@@ -6,7 +6,7 @@ const AboutSection = () => (
       <h2 className="text-4xl md:text-5xl font-extrabold mb-8 text-blue-500">
         About
       </h2>
-      <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
+      <div className="space-y-6 text-lg text-gray-300 leading-relaxed ">
         <p>
           I am a student @ The University of Maryland studying computer science.🧑‍💻
         </p>

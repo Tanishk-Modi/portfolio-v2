@@ -66,20 +66,20 @@ const ProjectsSection = () => {
               <div
                 className={`flex-1 z-10 bg-[#050e1c] p-6 rounded-md shadow-xl text-center md:text-left ${index % 2 === 0 ? 'md:-ml-24' : 'md:-mr-24'} ${index % 2 === 0 ? 'lg:-ml-32' : 'lg:-mr-32'}`}
               >
-                <span className="block text-blue-400 text-sm font-mono mb-2">
+                <span className="block text-blue-400 text-md font-mono mb-2">
                   {project.type}
                 </span>
                 <h3 className="text-[#ccd6f6] text-xl font-bold mb-4">
                   {project.title}
                 </h3>
-                <p className="text-sm leading-relaxed mb-5">
+                <p className="text-md md:text-base lg:text-lg leading-relaxed mb-5">
                   {project.description}
                 </p>
 
                 {/* Tags */}
                 <div className="flex flex-wrap justify-center md:justify-start gap-2 mb-4">
                   {project.tags.map((tag, tagIndex) => (
-                    <span key={tagIndex} className="bg-[#112240] text-blue-400 text-xs font-mono px-3 py-1 rounded-full">
+                    <span key={tagIndex} className="bg-[#112240] text-blue-400 text-sm font-mono px-3 py-1 rounded-full">
                       {tag}
                     </span>
                   ))}
