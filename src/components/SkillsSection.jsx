@@ -1,20 +1,18 @@
 import React from 'react';
 import {
-  DiJavascript1, DiReact, DiNodejsSmall, DiPython, DiJava
+   DiReact, DiPython, DiJava
 } from 'react-icons/di';
-import { SiTypescript, SiNextdotjs, SiExpress, SiTailwindcss, SiGit, SiFigma, SiPostman, SiDocker, SiFastapi, SiMongodb, SiPostgresql } from 'react-icons/si';
+import { SiTypescript, SiNextdotjs, SiExpress, SiTailwindcss, SiGit, SiFigma, SiPostman, SiDocker, SiFastapi, SiMongodb } from 'react-icons/si';
 import { BiLogoPostgresql } from "react-icons/bi";
 
 const skills = {
   languages: [
     { name: 'Python', icon: <DiPython className="w-16 h-16" /> },
     { name: 'Java', icon: <DiJava className="w-16 h-16" /> },
-    { name: 'JavaScript', icon: <DiJavascript1 className="w-16 h-16" /> },
     { name: 'TypeScript', icon: <SiTypescript className="w-16 h-16" /> },
   ],
   frameworks: [
     { name: 'React', icon: <DiReact className="w-16 h-16" /> },
-    { name: 'Node.js', icon: <DiNodejsSmall className="w-16 h-16" /> },
     { name: 'Next.js', icon: <SiNextdotjs className="w-16 h-16" /> },
     { name: 'Express', icon: <SiExpress className="w-16 h-16" /> },
     { name: 'Tailwind CSS', icon: <SiTailwindcss className="w-16 h-16" /> },
