@@ -1,28 +1,31 @@
-import React from 'react';
 import {
    DiReact, DiPython, DiJava
 } from 'react-icons/di';
-import { SiTypescript, SiNextdotjs, SiExpress, SiTailwindcss, SiGit, SiFigma, SiPostman, SiDocker, SiFastapi, SiMongodb } from 'react-icons/si';
+import { SiTypescript, SiExpress, SiTailwindcss, SiGit, SiFigma, SiFastapi, SiMongodb } from 'react-icons/si';
 import { BiLogoPostgresql } from "react-icons/bi";
+
+const CIcon = (props) => (
+  <svg viewBox="0 0 128 128" {...props}>
+    <path fill="currentColor" d="M125 50c-4-32-24-50-62-50C29 0 3 24 3 64c0 39 24 64 64 64 32 0 55-19 58-50H87c-2 11-8 20-20 20-21 0-24-16-24-33 0-23 8-35 22-35 13 0 20 7 22 20z"></path>
+  </svg>
+);
 
 const skills = {
   languages: [
     { name: 'Python', icon: <DiPython className="w-16 h-16" /> },
     { name: 'Java', icon: <DiJava className="w-16 h-16" /> },
     { name: 'TypeScript', icon: <SiTypescript className="w-16 h-16" /> },
+    { name: 'C', icon: <CIcon className="w-16 h-16" /> },
   ],
   frameworks: [
     { name: 'React', icon: <DiReact className="w-16 h-16" /> },
-    { name: 'Next.js', icon: <SiNextdotjs className="w-16 h-16" /> },
-    { name: 'Express', icon: <SiExpress className="w-16 h-16" /> },
     { name: 'Tailwind CSS', icon: <SiTailwindcss className="w-16 h-16" /> },
+    { name: 'Express', icon: <SiExpress className="w-16 h-16" /> },
     { name: 'FastAPI', icon: <SiFastapi className="w-16 h-16" /> },
   ],
   tools: [
     { name: 'Git', icon: <SiGit className="w-16 h-16" /> },
-    { name: 'Docker', icon: <SiDocker className="w-16 h-16" /> },
     { name: 'Figma', icon: <SiFigma className="w-16 h-16" /> },
-    { name: 'Postman', icon: <SiPostman className="w-16 h-16" /> },
     { name: 'MongoDB', icon: <SiMongodb className="w-16 h-16" /> },
     { name: 'PostgreSQL', icon: <BiLogoPostgresql className="w-16 h-16" /> },
   ],

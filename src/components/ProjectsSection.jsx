@@ -7,17 +7,17 @@ const rayCastingImg = '/mammothmaze.png';
 const projects = [
     {
       id: 1,
-      type: 'Full Stack',
+      type: 'Web Development',
       title: 'Profit Grid',
       description: 'Full stack stock analysis platform built with React/Tailwind Frontend, Python backend, and PostgreSQL database.',
       tags: ['React', 'Tailwind', 'Python', 'PostgreSQL', 'FastAPI'],
       imageSrc: profitGridImg,
-      githubUrl: 'https://github.com/Tanishk-Modi/Profit-Grid',
-      liveUrl: 'https://profit-grid-git-main-tanishk-modis-projects.vercel.app/'
+      githubUrl: 'https://github.com/Tanishk-Modi/Profit-Grid-V2',
+      liveUrl: 'https://profit-grid.vercel.app'
     },
     {
       id: 2,
-      type: 'Game Design',
+      type: 'Graphics & Game Design',
       title: 'Custom Raycasting Engine',
       description: 'A Java-based retro-style 3D maze game featuring raycasting visuals, real-time player movement, and a relentless woolly mammoth that stalks you through a procedural hell.',
       tags: ['Java AWT', 'A* Pathfinding'],
