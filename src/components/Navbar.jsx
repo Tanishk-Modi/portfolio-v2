@@ -48,7 +48,7 @@ const Navbar = () => {
                 hover:text-white
                 group"
             >
-              <span className="absolute inset-0 rounded-md bg-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-200 -z-10"></span>
+              <span className="absolute inset-0 rounded-md bg-blue-800 opacity-0 group-hover:opacity-100 transition-opacity duration-200 -z-10"></span>
               {link.name}
             </a>
           </li>

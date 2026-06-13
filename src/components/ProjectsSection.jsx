@@ -3,6 +3,7 @@ import { Github, ExternalLink } from 'lucide-react';
 
 const profitGridImg = '/profitgridimg.png';
 const rayCastingImg = '/mammothmaze.png';
+const fetchImg = '/fetchimg.png';
 
 const projects = [
     {
@@ -12,7 +13,6 @@ const projects = [
       description: 'Full stack stock analysis platform built with React/Tailwind Frontend, Python backend, and PostgreSQL database.',
       tags: ['React', 'Tailwind', 'Python', 'PostgreSQL', 'FastAPI'],
       imageSrc: profitGridImg,
-      githubUrl: 'https://github.com/Tanishk-Modi/Profit-Grid-V2',
       liveUrl: 'https://profit-grid.vercel.app'
     },
     {
@@ -24,6 +24,16 @@ const projects = [
       imageSrc: rayCastingImg,
       githubUrl: 'https://github.com/8tsmith11/mammoth-maze',
       liveUrl: 'https://www.youtube.com/watch?v=x7w1gzq9Fo8'
+    },
+    {
+      id: 3,
+      type: 'Computer Vision & Machine Learning',
+      title: 'Fetch',
+      description: 'An AI-powered smart storage system that uses computer vision to automatically catalog physical objects and physically retrieve them instantly by text or voice command.',
+      tags: ['Python', 'CLIP', 'FastAPI', 'OpenCV', 'PySerial'],
+      imageSrc: fetchImg,
+      githubUrl: 'https://github.com/8tsmith11/turntable-storage',
+      liveUrl: 'https://devpost.com/software/fetch-rmeo7c'
     },
 ];
 
@@ -88,6 +98,7 @@ const ProjectsSection = () => {
                 {/* Links */}
                 <div className="flex justify-center md:justify-start gap-4">
                   {/* GitHub link */}
+                  {project.githubUrl && (
                   <a
                     href={project.githubUrl}
                     target="_blank"
@@ -96,6 +107,7 @@ const ProjectsSection = () => {
                   >
                     <Github size={24} />
                   </a>
+                  )}
                   {/* Live project link */}
                   <a
                     href={project.liveUrl}

@@ -1,8 +1,7 @@
 import {
    DiReact, DiPython, DiJava
 } from 'react-icons/di';
-import { SiTypescript, SiExpress, SiTailwindcss, SiGit, SiFigma, SiFastapi, SiMongodb } from 'react-icons/si';
-import { BiLogoPostgresql } from "react-icons/bi";
+import { SiTypescript, SiExpress, SiTailwindcss, SiFastapi } from 'react-icons/si';
 
 const CIcon = (props) => (
   <svg viewBox="0 0 128 128" {...props}>
@@ -14,7 +13,6 @@ const skills = {
   languages: [
     { name: 'Python', icon: <DiPython className="w-16 h-16" /> },
     { name: 'Java', icon: <DiJava className="w-16 h-16" /> },
-    { name: 'TypeScript', icon: <SiTypescript className="w-16 h-16" /> },
     { name: 'C', icon: <CIcon className="w-16 h-16" /> },
   ],
   frameworks: [
@@ -22,12 +20,6 @@ const skills = {
     { name: 'Tailwind CSS', icon: <SiTailwindcss className="w-16 h-16" /> },
     { name: 'Express', icon: <SiExpress className="w-16 h-16" /> },
     { name: 'FastAPI', icon: <SiFastapi className="w-16 h-16" /> },
-  ],
-  tools: [
-    { name: 'Git', icon: <SiGit className="w-16 h-16" /> },
-    { name: 'Figma', icon: <SiFigma className="w-16 h-16" /> },
-    { name: 'MongoDB', icon: <SiMongodb className="w-16 h-16" /> },
-    { name: 'PostgreSQL', icon: <BiLogoPostgresql className="w-16 h-16" /> },
   ],
 };
 
@@ -58,12 +50,7 @@ const SkillsSection = () => {
           </div>
         </div>
 
-        <div>
-          <h3 className="text-2xl font-semibold text-center mb-8">Tools</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {skills.tools.map(skill => <SkillCard key={skill.name} {...skill} />)}
-          </div>
-        </div>
+
       </div>
     </section>
   );

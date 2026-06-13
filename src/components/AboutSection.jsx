@@ -11,11 +11,10 @@ const AboutSection = () => (
           I am a student @ The University of Maryland (go terps! 🐢) studying computer science.🧑‍💻
         </p>
         <p>
-          I'm currently involved with the FIRE (First Year Innovation and Research Experience) program here, 
-          where I am learning how to engineer bioinspired robotic systems.🦾
+          Currently, I'm an intern at NAWCAD (Naval Air Warfare Center Aircraft Division) researching quantum algorithms. Before that, I engineered a bioinspired underwater robot 🦾 through UMD's FIRE program, and built full-stack web platforms as a software intern at TerpLabs.
         </p>
         <p>
-          In addition to my love of technology, I am also interested in history, bodybuilding, finance, and entrepreneurship.
+          In addition to my love of technology, I am also interested in history, bodybuilding, traveling, and playing the piano.
         </p>
       </div>
     </div>
