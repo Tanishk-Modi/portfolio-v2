@@ -8,15 +8,6 @@ const fetchImg = '/fetchimg.png';
 const projects = [
     {
       id: 1,
-      type: 'Web Development',
-      title: 'Profit Grid',
-      description: 'Full stack stock analysis platform built with React/Tailwind Frontend, Python backend, and PostgreSQL database.',
-      tags: ['React', 'Tailwind', 'Python', 'PostgreSQL', 'FastAPI'],
-      imageSrc: profitGridImg,
-      liveUrl: 'https://profit-grid.vercel.app'
-    },
-    {
-      id: 2,
       type: 'Graphics & Game Design',
       title: 'Custom Raycasting Engine',
       description: 'A Java-based retro-style 3D maze game featuring raycasting visuals, real-time player movement, and a relentless woolly mammoth that stalks you through a procedural hell.',
@@ -26,7 +17,7 @@ const projects = [
       liveUrl: 'https://www.youtube.com/watch?v=x7w1gzq9Fo8'
     },
     {
-      id: 3,
+      id: 2,
       type: 'Computer Vision & Machine Learning',
       title: 'Fetch',
       description: 'An AI-powered smart storage system that uses computer vision to automatically catalog physical objects and physically retrieve them instantly by text or voice command.',
@@ -34,6 +25,15 @@ const projects = [
       imageSrc: fetchImg,
       githubUrl: 'https://github.com/8tsmith11/turntable-storage',
       liveUrl: 'https://devpost.com/software/fetch-rmeo7c'
+    },
+    {
+      id: 3,
+      type: 'Web Development',
+      title: 'Profit Grid',
+      description: 'Full stack stock analysis platform built with React Frontend, FastAPI backend.',
+      tags: ['React', 'Tailwind', 'Python', 'FastAPI'],
+      imageSrc: profitGridImg,
+      liveUrl: 'https://profit-grid.vercel.app'
     },
 ];
 

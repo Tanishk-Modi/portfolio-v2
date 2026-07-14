@@ -1,7 +1,7 @@
 import {
    DiReact, DiPython, DiJava
 } from 'react-icons/di';
-import { SiTypescript, SiExpress, SiTailwindcss, SiFastapi } from 'react-icons/si';
+import { SiTypescript, SiExpress, SiFastapi } from 'react-icons/si';
 
 const CIcon = (props) => (
   <svg viewBox="0 0 128 128" {...props}>
@@ -17,7 +17,6 @@ const skills = {
   ],
   frameworks: [
     { name: 'React', icon: <DiReact className="w-16 h-16" /> },
-    { name: 'Tailwind CSS', icon: <SiTailwindcss className="w-16 h-16" /> },
     { name: 'Express', icon: <SiExpress className="w-16 h-16" /> },
     { name: 'FastAPI', icon: <SiFastapi className="w-16 h-16" /> },
   ],
