@@ -1,5 +1,5 @@
 import {
-   DiReact, DiPython, DiJava
+   DiReact, DiPython, DiJava, DiJavascript1
 } from 'react-icons/di';
 import { SiTypescript, SiExpress, SiFastapi } from 'react-icons/si';
 
@@ -14,6 +14,7 @@ const skills = {
     { name: 'Python', icon: <DiPython className="w-16 h-16" /> },
     { name: 'Java', icon: <DiJava className="w-16 h-16" /> },
     { name: 'C', icon: <CIcon className="w-16 h-16" /> },
+    { name: 'JavaScript', icon: <DiJavascript1 className="w-16 h-16" /> },
   ],
   frameworks: [
     { name: 'React', icon: <DiReact className="w-16 h-16" /> },

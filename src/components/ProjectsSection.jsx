@@ -1,7 +1,6 @@
 import React from 'react'
 import { Github, ExternalLink } from 'lucide-react';
 
-const profitGridImg = '/profitgridimg.png';
 const rayCastingImg = '/mammothmaze.png';
 const fetchImg = '/fetchimg.png';
 
@@ -25,16 +24,7 @@ const projects = [
       imageSrc: fetchImg,
       githubUrl: 'https://github.com/8tsmith11/turntable-storage',
       liveUrl: 'https://devpost.com/software/fetch-rmeo7c'
-    },
-    {
-      id: 3,
-      type: 'Web Development',
-      title: 'Profit Grid',
-      description: 'Full stack stock analysis platform built with React Frontend, FastAPI backend.',
-      tags: ['React', 'Tailwind', 'Python', 'FastAPI'],
-      imageSrc: profitGridImg,
-      liveUrl: 'https://profit-grid.vercel.app'
-    },
+    }
 ];
 
 const ProjectsSection = () => {
