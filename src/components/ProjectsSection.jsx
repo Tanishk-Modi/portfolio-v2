@@ -13,7 +13,7 @@ const projects = [
       tags: ['Java AWT', 'A* Pathfinding'],
       imageSrc: rayCastingImg,
       githubUrl: 'https://github.com/8tsmith11/mammoth-maze',
-      liveUrl: 'https://www.youtube.com/watch?v=x7w1gzq9Fo8'
+      liveUrl: 'https://devpost.com/software/mammoth-maze'
     },
     {
       id: 2,
@@ -33,9 +33,10 @@ const ProjectsSection = () => {
       <div className="mx-auto max-w-6xl">
         {/* Section Title */}
         <div className="flex flex-col items-center justify-center w-full mb-[150px] md:mb-[100px] sm:mb-[80px]">
-          <h2 className="text-4xl md:text-5xl font-extrabold mb-8 text-blue-500">
+          <h2 className="text-4xl md:text-5xl font-extrabold mb-4 text-blue-500">
             Projects
           </h2>
+          <div className="w-12 h-1 rounded-full bg-blue-500/60" />
         </div>
 
         {/* Projects Grid */}
@@ -50,7 +51,7 @@ const ProjectsSection = () => {
                 href={project.liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`relative flex-1 max-w-full md:max-w-[60%] rounded-md overflow-hidden shadow-xl transition-transform duration-300 group`}
+                className={`relative flex-1 max-w-full md:max-w-[60%] rounded-lg overflow-hidden shadow-xl border border-white/10 transition-transform duration-300 group`}
               >
                 <img
                   src={project.imageSrc}
@@ -64,7 +65,7 @@ const ProjectsSection = () => {
 
               {/* Project Details */}
               <div
-                className={`flex-1 z-10 bg-[#050e1c] p-6 rounded-md shadow-xl text-center md:text-left ${index % 2 === 0 ? 'md:-ml-24' : 'md:-mr-24'} ${index % 2 === 0 ? 'lg:-ml-32' : 'lg:-mr-32'}`}
+                className={`flex-1 z-10 bg-[#050e1c] border border-white/10 p-6 rounded-lg shadow-xl text-center md:text-left ${index % 2 === 0 ? 'md:-ml-24' : 'md:-mr-24'} ${index % 2 === 0 ? 'lg:-ml-32' : 'lg:-mr-32'}`}
               >
                 <span className="block text-blue-400 text-md font-mono mb-2">
                   {project.type}
@@ -79,7 +80,7 @@ const ProjectsSection = () => {
                 {/* Tags */}
                 <div className="flex flex-wrap justify-center md:justify-start gap-2 mb-4">
                   {project.tags.map((tag, tagIndex) => (
-                    <span key={tagIndex} className="bg-[#112240] text-blue-400 text-sm font-mono px-3 py-1 rounded-full">
+                    <span key={tagIndex} className="bg-[#112240] border border-blue-500/20 text-blue-400 text-sm font-mono px-3 py-1 rounded-full">
                       {tag}
                     </span>
                   ))}
@@ -93,7 +94,8 @@ const ProjectsSection = () => {
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#a8b2d1] hover:text-blue-400 transition-colors"
+                    aria-label={`${project.title} on GitHub`}
+                    className="text-[#a8b2d1] hover:text-blue-400 hover:-translate-y-0.5 transition"
                   >
                     <Github size={24} />
                   </a>
@@ -103,7 +105,8 @@ const ProjectsSection = () => {
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#a8b2d1] hover:text-blue-400 transition-colors"
+                    aria-label={`${project.title} live project`}
+                    className="text-[#a8b2d1] hover:text-blue-400 hover:-translate-y-0.5 transition"
                   >
                     <ExternalLink size={24} />
                   </a>
@@ -113,8 +116,28 @@ const ProjectsSection = () => {
           ))}
         </div>
 
-          {/* Minor Projects */}
-
+        {/* Research Notes PDF */}
+        <div className="mt-[100px] sm:mt-[60px] flex justify-center">
+          <a
+            href="/Quantum_Notes.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open quantum research notes (PDF) in a new tab"
+            className="group inline-flex items-center gap-5 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-4 text-left transition hover:-translate-y-0.5 hover:border-blue-500/40 hover:bg-white/10"
+          >
+            <img
+              src="/quantum-notes-preview.png"
+              alt="Preview of quantum research notes"
+              className="h-28 w-auto rounded-md border border-white/10 bg-white object-cover object-top"
+            />
+            <span>
+              <span className="block text-blue-400 text-sm font-mono mb-1">Research</span>
+              <span className="block text-lg font-semibold text-[#ccd6f6]">Quantum Research Notes</span>
+              <span className="block text-sm text-gray-400">PDF · Opens in a new tab</span>
+            </span>
+            <span className="text-blue-500 text-xl transition group-hover:translate-x-1">→</span>
+          </a>
+        </div>
       </div>
     </section>
   );

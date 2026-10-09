@@ -2,8 +2,8 @@ import Navbar from './components/Navbar'
 import DarkVeil from './components/DarkVeil'
 import HeroSection from './components/HeroSection'
 import AboutSection from './components/AboutSection';
+import ExperienceSection from './components/ExperienceSection';
 import ProjectsSection from './components/ProjectsSection';
-import SkillsSection from './components/SkillsSection';
 import Footer from './components/Footer';
 
 const App = () => {
@@ -21,9 +21,9 @@ const App = () => {
 
       <AboutSection></AboutSection>
 
-      <ProjectsSection></ProjectsSection>
+      <ExperienceSection></ExperienceSection>
 
-      <SkillsSection></SkillsSection>
+      <ProjectsSection></ProjectsSection>
 
       <Footer></Footer>
 

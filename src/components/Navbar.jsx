@@ -3,8 +3,8 @@ import React, { useState } from 'react'
 const navLinks = [
   { name: 'Home', href: '#home' },
   { name: 'About', href: '#about' },
+  { name: 'Experience', href: '#experience' },
   { name: 'Projects', href: '#new-projects' },
-  { name: 'Skills', href: '#skills' },
 ]
 
 const Navbar = () => {
@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="w-full px-2 md:px-8 py-3 shadow-lg fixed top-0 left-0 z-50"
+      className="w-full px-2 md:px-8 py-3 shadow-lg fixed top-0 left-0 z-50 border-b border-white/10"
       style={{
         background: "rgba(0, 0, 0, 0.7)",
         backdropFilter: "blur(25px)",
@@ -48,7 +48,7 @@ const Navbar = () => {
                 hover:text-white
                 group"
             >
-              <span className="absolute inset-0 rounded-md bg-blue-800 opacity-0 group-hover:opacity-100 transition-opacity duration-200 -z-10"></span>
+              <span className="absolute inset-0 rounded-md bg-blue-800/80 opacity-0 group-hover:opacity-100 transition-opacity duration-200 -z-10"></span>
               {link.name}
             </a>
           </li>
